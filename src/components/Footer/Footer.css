@@ -1,0 +1,114 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-download p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .app-links img {
+    height: 50px;
+    margin: 10px;
+  }
+  
+  /* Payment icons and footer links */
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .payment-icons img {
+    height: 40px;
+    margin: 0 5px;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    margin: 10px 20px;
+    text-align: left;
+  }
+  
+  .footer-column a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Bottom copyright section */
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive design adjustments */
+  @media screen and (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .app-links img {
+      height: 40px;
+    }
+  
+    .payment-icons img {
+      height: 30px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .app-download p {
+      font-size: 14px;
+    }
+  
+    .app-links img {
+      height: 35px;
+    }
+  
+    .payment-icons img {
+      height: 25px;
+    }
+  
+    .footer-column a {
+      font-size: 12px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,31 @@
+/* Wishlist.css */
+.wishlist-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .wishlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .wishlist-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .wishlist-item-details {
+    flex-grow: 1;
+  }
+  
+  .wishlist-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

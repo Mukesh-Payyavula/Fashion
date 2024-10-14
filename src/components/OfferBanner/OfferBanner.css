@@ -1,0 +1,44 @@
+/* OfferBanner.css */
+
+.offer-banner {
+    background-color: #ffcc00; /* Bright color for visibility */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .offer-banner__content {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .offer-banner__button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .offer-banner__button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .offer-banner {
+      padding: 15px;
+    }
+  
+    .offer-banner__content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .offer-banner__content p {
+      font-size: 1rem;
+    }
+  }
+  

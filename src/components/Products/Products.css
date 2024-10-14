@@ -1,0 +1,129 @@
+.products-container {
+    padding: 15px;
+  }
+  
+  .all-products {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .items-header-big {
+    font-size: 2rem;
+  }
+  
+  .header-small {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-small svg {
+    margin-left: 5px;
+  }
+  
+  .products-header-line {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product__card__card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    margin: 10px;
+  }
+  
+  .product__card__card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product__card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-image {
+    flex: 1;
+  }
+  
+  .product__img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product__card__detail {
+    padding: 15px;
+  }
+  
+  .product__name {
+    font-weight: bold;
+  }
+  
+  .product__description {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .product__price {
+    font-size: 1.2rem;
+    color: #000;
+    margin: 10px 0;
+  }
+  
+  .product__card__action {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product__card__action button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .product__card__action svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .product__card__card {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width:475px) {
+    .product__card__card{
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .product__card__card {
+      width: 70%;
+    }
+  
+    .featured__items__header__big {
+      font-size: 1.5rem;
+    }
+  }
