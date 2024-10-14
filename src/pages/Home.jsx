@@ -4,7 +4,7 @@ import Categories from "../components/Categories/Categories";
 // import BestSellers from "../components/BestSeller/BestSeller";
 import OfferBanner from '../components/OfferBanner/OfferBanner';
 import Products from "../components/Products/Products";
-import Features from "../components/Features/Features";
+// import Features from "../components/Features/Features";
 import Footer from "../components/Footer/Footer";
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             {/* <BestSellers /> */}
             <OfferBanner />
             <Products />
-            <Features />
+            {/* <Features /> */}
             <Footer />
         </>
     )

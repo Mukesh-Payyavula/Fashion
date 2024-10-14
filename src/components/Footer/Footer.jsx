@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="app-download">
-        <p>Download Hello Mobile App Now!!</p>
+        <p>Download Fashion Mobile App Now!!</p>
         <div className="app-links">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lSCmUP7R7bb1H4Kvn5Z30Njj6DBLUwmGug&s" alt="Google Play" />
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNQc5CapoSJE3sujvojLNNXipoAGDZYgUWw&s" alt="App Store" />
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Avenue E-Commerce Limited (AEL). All Rights Reserved.</p>
+        <p>&copy; Fashion-Store Limited (AEL). All Rights Reserved.</p>
       </div>
     </footer>
   );
