@@ -1,65 +1,90 @@
-/* Footer.css */
-
 .footer {
-    background-color: #abb917;
-    color: white;
-    padding: 20px;
-  }
-  
-  .footer__container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer__items__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer__help__container, .footer__contact__container, .footer__social__link__container {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-  }
-  
-  .footer__help__links, .footer__contacts, .footer__social__links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer__help__links li, .footer__contacts li, .footer__social__links li {
-    margin: 5px 0;
-  }
-  
-  .footer__copyright__container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .nav {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav li {
-    margin: 0 10px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .footer__items__container {
-      flex-direction: column;
-    }
-  
-    .footer__help__container,
-    .footer__contact__container,
-    .footer__social__link__container {
-      text-align: center;
-    }
-  }
-  
+  border-top: 1px solid rgba(0, 0, 0, 0.85);
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.mobile-section {
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.85);
+}
+
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-email svg {
+  margin-right: 10px;
+}
+
+.social-links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.plus {
+  display: inline-block;
+}
+
+.minus {
+  display: none;
+}
+
+.d-none {
+  display: none;
+}

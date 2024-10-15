@@ -1,0 +1,40 @@
+.checkout-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .checkout-cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-cart-item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .shipping-form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .shipping-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .shipping-form button:hover {
+    background-color: #0056b3;
+  }
+  

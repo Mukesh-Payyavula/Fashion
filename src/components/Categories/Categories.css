@@ -1,4 +1,4 @@
-/* FeaturedCategories.css */
+
 .featured__categories__container {
     padding: 20px;
   }
@@ -28,9 +28,6 @@
   
   .category__card__card {
     width: 30%;
-  
-    border: 1px solid #eee;
-    border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s;
   }
@@ -43,13 +40,15 @@
     text-align: center;
   }
   
-  .product__img {
-    max-width: 100%;
-    height: auto;
+  .product-img {
+    /* max-width: 100%; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
   }
   
   .category__card__detail {
-    padding: 10px;
+    padding: 45px;
     text-align: center;
   }
   
@@ -59,17 +58,49 @@
   }
   
   .shop-button {
-    padding: 10px 20px;
-    border: 2px solid #007bff; /* Example border color */
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
     background-color: transparent;
-    color: #007bff; /* Example button text color */
+    color: #007bff;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
   }
   
   .shop-button:hover {
-    background-color: #007bff; /* Hover effect */
+    background-color: #007bff;
     color: white;
   }
   
+  @media (max-width: 768px) {
+    .featured__header__big {
+      font-size: 1.5rem;
+    }
+  
+    .category__card__card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .featured__header__big {
+      font-size: 1.2rem;
+    }
+  
+    .category__card__card {
+      width: 100%;
+    }
+  
+    .category__image {
+      height: 150px;
+    }
+  
+    .category__name {
+      font-size: 1.2rem;
+    }
+  
+    .shop-button {
+      padding: 8px 16px;
+    }
+  }

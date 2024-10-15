@@ -7,6 +7,7 @@ import NavBar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Products from "./components/Products/Products";
 import Cart from "./components/Cart/Cart";
+import Checkout from './components/Checkout/Checkout';
 import Wishlist from "./components/Wishlist/Wishlist";
 import SignUpForm from "./components/Account/SignUpForm";
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/signup" element={<SignUpForm />} />
             <Route path="/products" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/wishlist" element={<Wishlist />} />
           </Routes>
         </BrowserRouter>

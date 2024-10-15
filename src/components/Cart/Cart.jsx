@@ -1,7 +1,7 @@
-// Cart.js
 import React from 'react';
 import { useCart } from '../../context/CartContext';
-import './Cart.css'; // Create this file for styling
+import { Link } from 'react-router-dom';
+import './Cart.css'; 
 
 const Cart = () => {
   const { cart, removeFromCart } = useCart();
@@ -24,6 +24,7 @@ const Cart = () => {
               </div>
             </div>
           ))}
+          <Link to="/Checkout" className="checkout-button">Proceed to Checkout</Link>
         </div>
       )}
     </div>

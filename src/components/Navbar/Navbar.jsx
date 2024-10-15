@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Form, FormControl, Button, } from 'react-bootstrap';
 import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useCart } from '../../context/CartContext';
+import { useWishlist } from '../../context/WishlistContext';
 import './Navbar.css';
 
 const NavBar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const { cart } = useCart();
+    const { wishlist } = useWishlist();
 
   const toggleDropdown = () => {
     setDropdownOpen(prev => !prev);
@@ -29,8 +33,14 @@ const NavBar = () => {
               <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
             </NavDropdown> */}
             <Nav.Link as={Link} to="/Signup"><FaUser/></Nav.Link>
-            <Nav.Link as={Link} to="/wishlist"><FaHeart /></Nav.Link>
-            <Nav.Link as={Link} to="/cart"><FaShoppingCart /></Nav.Link>
+            <Nav.Link as={Link} to="/wishlist">
+                            <FaHeart />
+                            {wishlist.length > 0 && <span>({wishlist.length})</span>}
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/cart">
+                            <FaShoppingCart />
+                            {cart.length > 0 && <span>({cart.length})</span>}
+                        </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

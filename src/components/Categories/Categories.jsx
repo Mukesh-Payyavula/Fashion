@@ -6,19 +6,20 @@ const Categories = () => {
   const categories = [
     {
       name: 'Men',
-      imgSrc: 'https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D',
+      imgSrc: 'https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/u/l/r/l-4mss1900-01-snitch-original-imagqkgbnafxj6kn.jpeg?q=70',
       link: '/category/men',
     },
     {
       name: 'Women',
-      imgSrc: 'https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D',
+      imgSrc: 'https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/w/t/o/xl-rani-bandage-aliya-cut-kurta-laxmi-fab-tex-original-imah47ucuxztpbhg.jpeg?q=70',
       link: '/category/women',
     },
     {
       name: 'Kids',
-      imgSrc: 'https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D',
+      imgSrc: 'https://rukminim2.flixcart.com/image/612/612/xif0q/kids-ethnic-set/t/j/1/12-13-years-chunri-print-vishesta-original-imah2ys3qawfqppy.jpeg?q=70',
       link: '/category/kids',
     },
+    
   ];
 
   return (
@@ -32,7 +33,7 @@ const Categories = () => {
           {categories.map((category, index) => (
             <div key={index} className="category__card__card">
               <div className="category__image">
-                <img src={category.imgSrc} alt={category.name} className="product__img" />
+                <img src={category.imgSrc} alt={category.name} className="product-img" />
               </div>
               <div className="category__card__detail">
                 <div className="category__name">{category.name}</div>

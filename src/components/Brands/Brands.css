@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the lifestyle brands */
+  .lifestyle-brands__container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  .lifestyle-brands__header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Brands card container */
+  .lifestyle-brands__card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual brand card */
+  .brand__card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 220px;
+    padding: 10px;
+  }
+  
+  .brand__card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Brand logo styles */
+  .brand__logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Brand name styles */
+  .brand__name {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .lifestyle-brands__header {
+      font-size: 1.5rem;
+    }
+  
+    .brand__card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lifestyle-brands__header {
+      font-size: 1.2rem;
+    }
+  
+    .brand__card {
+      width: 90%;
+    }
+  
+    .brand__name {
+      font-size: 1rem;
+    }
+  }
+  
